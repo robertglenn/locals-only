@@ -2,6 +2,7 @@
 resource "google_storage_bucket" "website-bucket" {
   name        = local.websiteBucketName
   location    = local.bucketLocation
+  labels      = local.labels
   # ...
   
   logging {
@@ -12,4 +13,5 @@ resource "google_storage_bucket" "website-bucket" {
 resource "google_storage_bucket" "logs-bucket" {
   name        = local.logsBucketName
   location    = local.bucketLocation
+  labels      = local.labels
 }
