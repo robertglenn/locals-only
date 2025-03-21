@@ -1,5 +1,5 @@
 
 resource "google_storage_bucket" "my-bucket" {
-  name        = local.constantLocalName
+  name        = local.variableLocalName
   location    = local.constantLocalLocation
 }
