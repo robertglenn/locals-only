@@ -1,6 +1,6 @@
 
 locals {
-  mwareComputeName  = "bucket-${var.siteName}"
+  mwareComputeName  = "compute-${var.siteName}"
   mwareComputeZone  = "us-central1-a"
   mwareMachineType  = "e2-medium"
   labels            = {
